@@ -26,12 +26,12 @@
 </div>
 <script>
     const hideFullScreenButton = "";
-    const buildUrl = "Build";
-    const loaderUrl = buildUrl + "/TCOLORS.loader.js";
+    const buildUrl = "https://cdn.jsdelivr.net/gh/v-classroom-googl/oyyo@main/Build/";
+    const loaderUrl = buildUrl + "TCOLORS.loader.js";
     const config = {
-        dataUrl: buildUrl + "/TCOLORS.data.unityweb",
-        frameworkUrl: buildUrl + "/TCOLORS.framework.js.unityweb",
-        codeUrl: buildUrl + "/TCOLORS.wasm.unityweb",
+        dataUrl: buildUrl + "TCOLORS.data.unityweb",
+        frameworkUrl: buildUrl + "TCOLORS.framework.js.unityweb",
+        codeUrl: buildUrl + "TCOLORS.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SkibidiToilet",
@@ -104,7 +104,7 @@
         .then(ysdk => {
             console.log('Init Yandex SDK');
             window.ysdk = ysdk;
-            initSDK = false;
+            initSDK = true;
             InitPayments();
 
             try {

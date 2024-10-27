@@ -91,7 +91,7 @@ YaGames
 .init()
 .then(ysdk => {
 	window.ysdk = ysdk;
-	window.isRussian = ysdk.environment.i18n.lang == "ru";
+	window.isRussian = ysdk.environment.i18n.lang == "en";
 	loadLib("index.js");
 	window.timeToShow = 1500;
 	return ysdk.getFlags();
